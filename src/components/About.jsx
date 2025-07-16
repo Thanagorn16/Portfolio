@@ -1,4 +1,5 @@
 import './About.css'
+import { Element } from 'react-scroll';
 
 function About() {
     const skills = [
@@ -21,7 +22,7 @@ function About() {
     ];
 
     return (
-        <div className='about-container' id='about'>
+        <Element className='about-container' name='about'>
             <p className='about-text'>
                 I am an aspiring full stack developer recently graduated from 42 Bangkok,
                 a programming school associated with KMITL, with hands-on experience building a web application. 
@@ -35,7 +36,7 @@ function About() {
                     </li>
                 ))}
             </ul>
-        </div>
+        </Element>
     )
 }
 

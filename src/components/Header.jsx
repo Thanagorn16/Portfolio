@@ -3,9 +3,9 @@ import { Link } from 'react-scroll';
 
 function Header() {
     const navLinks = [
-        {href: '#about', label: 'About'},
-        {href: '#education', label: 'Education'},
-        {href: '#projects', label: 'Projects'}
+        {to: 'about', label: 'About'},
+        {to: 'education', label: 'Education'},
+        {to: 'projects', label: 'Projects'}
     ];
 
     return (
@@ -20,10 +20,18 @@ function Header() {
                 <ul className="nav-list">
                     {navLinks.map((link, index) => (
                         <li className='nav-items' key={index}>  
-                            <a href={link.href} className='nav-link'>
+                            <Link 
+                                    to={link.to} 
+                                    className='nav-link'
+                                    smooth={true} 
+                                    duration={500} 
+                                    offset={-window.innerHeight / 2 + 200}
+                                    spy={true}
+                                    activeClass='active'
+                            >
                                 <span className='nav-indicator'></span>
                                 <span className='nav-text'>{link.label}</span>
-                            </a>
+                            </Link>
                         </li>
                     ))}
                 </ul>

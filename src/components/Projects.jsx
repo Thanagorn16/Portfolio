@@ -1,5 +1,6 @@
 import './Projects.css'
 import {useState} from 'react'
+import { Element } from 'react-scroll';
 
 function Projects() {
     const [hoverIndex, setHoverIndex] = useState(null);
@@ -38,7 +39,7 @@ function Projects() {
     
 
     return (
-        <>
+        <Element name='projects'>
             <h2>Projects</h2>
             {projects.map((project, index) => (
                 <a key={index} href={project.url} 
@@ -57,7 +58,7 @@ function Projects() {
                     </div>
                 </a>
             ))}
-        </>
+        </Element>
     );
 }
 

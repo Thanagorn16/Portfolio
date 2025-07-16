@@ -62,7 +62,7 @@
     text-transform: uppercase;
     letter-spacing: 0.15rem;
     color: #64748b;
-    transition: color 0.3s ease;
+    transition: color 0.1s ease;
 }
 
 /* should learn about this later */
@@ -80,8 +80,13 @@
   /* slate-200 */
 }
 
-html {
-    scroll-behavior: smooth;
+.nav-link.active .nav-indicator {
+    background-color: hsl(214, 32%, 91%);
+    width: 4rem;
+}
+
+.nav-link.active .nav-text {
+    color: hsl(214, 32%, 91%);
 }
 
 @media (max-width: 768px) {

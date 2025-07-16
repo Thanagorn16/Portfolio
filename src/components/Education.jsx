@@ -18,8 +18,8 @@ function Education() {
     ];
 
     return (
-        <Element>
-            <h2 id='education'>Education</h2>
+        <Element name='education'>
+            <h2>Education</h2>
             {infos.map((info, index) => (
                 <ul className='education-list' key={index}>
                     <li className='edication-item'>
