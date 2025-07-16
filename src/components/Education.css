@@ -1,0 +1,20 @@
+/* .education-container {
+    margin-bottom: 50px;
+} */
+
+.education-list {
+    list-style-type: none;
+    margin-top: auto;
+}
+
+.edu-des {
+    margin-top: 0px;
+    color: hsl(0, 0%, 70%);
+    font-style: italic;
+}
+
+.edu-skill {
+    list-style-type: disc;
+    display: list-item;
+    margin-left: 2rem;
+}

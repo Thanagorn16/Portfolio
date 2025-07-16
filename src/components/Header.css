@@ -1,0 +1,109 @@
+.port-header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3.2rem;
+    margin-top: 0;
+    margin-left: 3.2rem;
+    max-width: 600px;
+    width: 40%;
+    height: fit-content;
+    /* border: 1px solid hsl(226, 70%, 88%); */
+}
+
+.job-title {
+   margin-top: 10px; 
+   margin-bottom: 10px;
+}
+
+.short-desc {
+    margin-top: 0px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.nav-container {
+    margin-top: 1rem;
+}
+
+.nav-list {
+    padding: 0;
+    list-style-type: none;
+    color: hsl(226, 70%, 88%);
+}
+
+.nav-items {
+    display: flex;
+    padding: 0.5rem 0;
+    color: hsl(226, 70%, 88%);
+    transition: color 0.3s ease;
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-indicator {
+    height: 0.1rem;
+    width: 2rem;
+    margin-right: 0.7rem ;
+    background-color: hsl(215, 19%, 35%);
+    transition: all 0.1s ease;
+}
+
+.nav-text { 
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    color: #64748b;
+    transition: color 0.3s ease;
+}
+
+/* should learn about this later */
+.nav-items:hover .nav-indicator,
+.nav-items:focus .nav-indicator,
+.nav-items:active .nav-indicator {
+    width: 4rem;
+    background-color: hsl(214, 32%, 91%);
+}
+
+.nav-items:hover .nav-text,
+.nav-items:focus .nav-text,
+.nav-items.active .nav-text {
+  color: hsl(214, 32%, 91%); 
+  /* slate-200 */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+    .port-header {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+    
+    .job-title {
+        font-size: 1.5rem;
+    }
+    
+    .short-desc {
+        font-size: 1rem;
+    }
+    
+    .nav-container {
+        display: none;
+    }
+    
+    li {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,46 @@
+.project-item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+    margin-bottom: 0px;
+    max-width: 600px;
+    text-decoration: none;
+    color: inherit;
+    opacity: 1;
+    transition: opacity 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-item.fade {
+    opacity: 0.4;
+    transform: scale(0.9);
+}
+
+.project-item:hover {
+    opacity: 1;
+    transform: translateY(-5px) scale(1);
+    box-shadow: 0 4px 8px hsla(168, 97%, 45%, 0.976);
+    z-index: 1;
+}
+
+.project-title {
+    font-size: 1.2rem;
+    color: inherit;
+    margin-bottom: 10px;
+    transition: color 0.2s ease;
+}
+
+.project-item:hover .project-title {
+    color: hsl(168, 97%, 45%);
+}
+
+.project-description {
+    font-size: 1rem;
+    color: hsl(226, 70%, 88%);
+    line-height: 1.5;
+}
+
+.response-list {
+    font-size: 0.8rem;
+    color: hsl(225, 20%, 61%);
+}
