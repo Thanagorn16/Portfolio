@@ -4,17 +4,21 @@ import Header from './components/Header.jsx'
 import About from './components/About.jsx'
 import Projects from './components/Projects.jsx'
 import Education from './components/Education.jsx'
+import Sportlight from './components/Spotlight.jsx'
 
 function App() {
   return (
-    <div className='layout'>
-      <Header/>
-      <section className='content'>
-        <About/>
-        <Education/>
-        <Projects/>
-      </section>
-    </div>
+    <>
+      <Sportlight/>
+      <div className='layout'>
+        <Header/>
+        <section className='content'>
+          <About/>
+          <Education/>
+          <Projects/>
+        </section>
+      </div>
+    </>
   )
 }
 
