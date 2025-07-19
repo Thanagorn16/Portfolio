@@ -1,13 +1,11 @@
 body{
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
     font-family: Arial, sans-serif;
     background-color: hsl(216, 65%, 11%);
     color: hsl(226, 70%, 88%);
     height: 100%;
     box-sizing: border-box;
-    /* border: 1px solid hsl(226, 70%, 88%); */
 }
 
 .layout {
@@ -18,8 +16,6 @@ body{
     height: auto;
     min-height: 100vh;
     box-sizing: border-box;
-    /* height: 100%; */
-    /* border: 1px solid hsl(226, 70%, 88%); */
 }
 
 .content {
@@ -28,15 +24,22 @@ body{
     max-width: 600px;
     height: auto;
     box-sizing: border-box;
-    /* height: 100%; */
-    /* border: 2px solid hsl(226, 70%, 88%); */
 }
 
 @media (max-width: 768px) {
+    h2 { 
+        text-align: center;
+    }
+
   .layout {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* gap: 100px; */
+    gap: 0;
+  }
+
+  .content { 
+    display: flex;
+    flex-direction: column;
   }
 }
