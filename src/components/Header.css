@@ -8,7 +8,31 @@
     margin-left: 3.2rem;
     max-width: 600px;
     width: 40%;
-    height: fit-content;
+    height: 100vh;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    /* border: 1px solid hsl(226, 70%, 88%); */
+}
+
+.header-inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
+    /* border: 1px solid hsl(226, 70%, 88%); */
+}
+
+.header-top {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* border: 1px solid hsl(226, 70%, 88%); */
+}
+
+.header-bottom {
+    margin-top: auto;
+    padding-bottom: 1rem;
     /* border: 1px solid hsl(226, 70%, 88%); */
 }
 
